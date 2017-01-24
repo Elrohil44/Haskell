@@ -1,0 +1,76 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-23 23:49:06.1533453 UTC
+
+interface haskell-project-0.1.0.0-40Qus2qNav6FY2bGilXhPo:Project 8001
+  interface hash: c58f950b73109ca6dd710a59abef566b
+  ABI hash: 8817c5e563496c5ecaa72d98f2c69e8a
+  export-list hash: d9b941dc7fe30ef8a8ff26841847ca1d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 53494c7b8494714fedca6d8aca6be677
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Project.someFunc
+module dependencies: Dequeue List Queue
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  base-4.9.0.0:System.IO c1068c4f4231e3198e330f99a58145b0
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+import  -/  Dequeue 56032de13ff670e6b7c331d11042cf60
+  exports: 0ef5986a949cf27e577803e312e39e86
+import  -/  List 930c35e7a085113987b50513ecd08b75
+  exports: 03bfaa8f0a85c05a536d1d3a31b53baa
+import  -/  Queue 6af1d53b22aad3a4e15fc200341c1c30
+  exports: 2f6adde67327f667ec3db851b3abc969
+31a56d115a30622e93a5e5ddd6061287
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Project.$trModule2
+                   Project.$trModule1) -}
+6ce2095d9c5d141dad2bfd674aaa9439
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Project"#) -}
+a1f639258a0cd2f9efd9bfdad813f32a
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "haskell-project-0.1.0.0-40Qus2qNav6FY2bGilXhPo"#) -}
+bfeb26b221127e42a8bf63a1d2f9e0ff
+  someFunc :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Project.someFunc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+f0d85adfc3c7c81a4710f0841c2a570f
+  someFunc1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Project.someFunc2
+                   GHC.Types.True
+                   eta) -}
+f14646623d5104d00491751157a19845
+  someFunc2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "someFunc"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

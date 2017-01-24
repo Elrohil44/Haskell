@@ -1,0 +1,408 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-23 23:49:05.4458326 UTC
+
+interface haskell-project-0.1.0.0-40Qus2qNav6FY2bGilXhPo:Queue 8001
+  interface hash: 823b461fbd48cc98f86878a8c73754cc
+  ABI hash: 6af1d53b22aad3a4e15fc200341c1c30
+  export-list hash: 2f6adde67327f667ec3db851b3abc969
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 53494c7b8494714fedca6d8aca6be677
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Queue.addQ
+  Queue.emptyQ
+  Queue.fromListQ
+  Queue.isEmptyQ
+  Queue.remQ
+  Queue.Queue
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Foldable 3cbed01c922be29649c33015287c82ca
+import  -/  base-4.9.0.0:GHC.Base dd8044a8d640eee51828c17c476a6ba7
+import  -/  base-4.9.0.0:GHC.List 47d436dfb7454bb1883fb4d943e3f389
+import  -/  base-4.9.0.0:GHC.Num f0aed3315b3ed1b330b71fc4148a5581
+import  -/  base-4.9.0.0:GHC.Show 0b5845243cb2ec62b57dd6963d276ec6
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+ac77cac8e7f4a336a0b14570934ed2d7
+  $fShowQueue :: GHC.Show.Show a => GHC.Show.Show (Queue.Queue a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(A,A,C(U))>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dShow :: GHC.Show.Show a).
+                  @ (Queue.Queue a)
+                  (Queue.$fShowQueue_$cshowsPrec @ a $dShow)
+                  (Queue.$fShowQueue_$cshow @ a $dShow)
+                  (Queue.$fShowQueue_$cshowList @ a $dShow) -}
+e469c5ec423616fa01fec2ee3c0964bd
+  $fShowQueue1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+9f04745e216effea91d4a3badac45b65
+  $fShowQueue2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "MkQueue {"#) -}
+ed4fa3d9ebb6ffff0eb98c1d3731ab8c
+  $fShowQueue3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
+1564bd1c681795f5fe0bc2128f62de5e
+  $fShowQueue4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "rlen = "#) -}
+ae7376cd85c01449c8a07a8e34a0287c
+  $fShowQueue5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "r = "#) -}
+cefd0abd084976f897aa0c140e238af2
+  $fShowQueue6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "flen = "#) -}
+47661a3db843eeb900e5dcbb23f6e1fc
+  $fShowQueue7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ", "#) -}
+d7cd62a16e350cb66c6258408f5b695a
+  $fShowQueue8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "f = "#) -}
+ac77cac8e7f4a336a0b14570934ed2d7
+  $fShowQueue_$cshow ::
+    GHC.Show.Show a => Queue.Queue a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(A,A,C(U))><S,1*U(U,U(U),U,U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (x :: Queue.Queue a) ->
+                 Queue.$fShowQueue_$cshowsPrec
+                   @ a
+                   $dShow
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ac77cac8e7f4a336a0b14570934ed2d7
+  $fShowQueue_$cshowList ::
+    GHC.Show.Show a => [Queue.Queue a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(A,A,C(U))><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (eta :: [Queue.Queue a])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Queue.Queue a)
+                   (Queue.$fShowQueue_$cshowsPrec @ a $dShow Queue.$fShowQueue1)
+                   eta
+                   eta1) -}
+ac77cac8e7f4a336a0b14570934ed2d7
+  $fShowQueue_$cshowsPrec ::
+    GHC.Show.Show a => GHC.Types.Int -> Queue.Queue a -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,U(A,A,C(U))><S(S),1*U(U)><S,1*U(U,U(U),U,U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: Queue.Queue a) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { Queue.MkQueue ww3 ww4 ww5 ww6 ->
+                 Queue.$w$cshowsPrec @ a w ww1 ww3 ww4 ww5 ww6 } }) -}
+5b9293e321e83138399616526fa4361c
+  $tc'MkQueue :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   342505739497063208##
+                   1640575639237954822##
+                   Queue.$trModule
+                   Queue.$tc'MkQueue1) -}
+e84fcf084b010672534b275910646141
+  $tc'MkQueue1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'MkQueue"#) -}
+a7a2e9ac7b225d2d26576138299ef9d6
+  $tcQueue :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9182215488085369808##
+                   14643856169452455734##
+                   Queue.$trModule
+                   Queue.$trModule1) -}
+0641c37d7c2aa6350a3b2a1242f3aee5
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Queue.$trModule2 Queue.$trModule1) -}
+3e2d99c77776a42393deb3bc3afa7f43
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Queue"#) -}
+bf8c1d170078029ba5e105661d75dd5b
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "haskell-project-0.1.0.0-40Qus2qNav6FY2bGilXhPo"#) -}
+94ea0c0b2d59fe2806f7d61e766ac952
+  $w$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Prim.Int#
+    -> [a] -> GHC.Types.Int -> [a] -> GHC.Types.Int -> GHC.Show.ShowS
+  {- Arity: 6,
+     Strictness: <L,U(A,A,C(U))><S,U><L,U><L,U(U)><L,U><L,U(U)>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: [a])
+                   (ww2 :: GHC.Types.Int)
+                   (ww3 :: [a])
+                   (ww4 :: GHC.Types.Int) ->
+                 let {
+                   f1 :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showList @ a w ww1
+                 } in
+                 let {
+                   f2 :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showList @ a w ww3
+                 } in
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (x :: GHC.Base.String) ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Queue.$fShowQueue8
+                       (f1
+                          (GHC.Base.++
+                             @ GHC.Types.Char
+                             Queue.$fShowQueue7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Queue.$fShowQueue6
+                                (case ww2 of ww5 { GHC.Types.I# ww6 ->
+                                 case GHC.Show.$wshowSignedInt
+                                        0#
+                                        ww6
+                                        (GHC.Base.++
+                                           @ GHC.Types.Char
+                                           Queue.$fShowQueue7
+                                           (GHC.Base.++
+                                              @ GHC.Types.Char
+                                              Queue.$fShowQueue5
+                                              (f2
+                                                 (GHC.Base.++
+                                                    @ GHC.Types.Char
+                                                    Queue.$fShowQueue7
+                                                    (GHC.Base.++
+                                                       @ GHC.Types.Char
+                                                       Queue.$fShowQueue4
+                                                       (case ww4 of ww7 { GHC.Types.I# ww8 ->
+                                                        case GHC.Show.$wshowSignedInt
+                                                               0#
+                                                               ww8
+                                                               (GHC.Base.++
+                                                                  @ GHC.Types.Char
+                                                                  Queue.$fShowQueue3
+                                                                  x) of ww9 { (#,#) ww10 ww11 ->
+                                                        GHC.Types.:
+                                                          @ GHC.Types.Char
+                                                          ww10
+                                                          ww11 } })))))) of ww7 { (#,#) ww8 ww9 ->
+                                 GHC.Types.: @ GHC.Types.Char ww8 ww9 } }))))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Base.++ @ GHC.Types.Char Queue.$fShowQueue2 (g x)
+                   GHC.Types.True
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           Queue.$fShowQueue2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 x))) }) -}
+c9a1d346c98860d243ce51ecb3f57fbf
+  $wremQ ::
+    [a]
+    -> GHC.Prim.Int#
+    -> [a]
+    -> GHC.Prim.Int#
+    -> GHC.Base.Maybe (a, Queue.Queue a)
+  {- Arity: 4, Strictness: <L,U><S,U><L,U><S,U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (ww :: [a])
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: [a])
+                   (ww3 :: GHC.Prim.Int#) ->
+                 case GHC.Prim.+# ww1 ww3 of wild {
+                   DEFAULT
+                   -> GHC.Base.Just
+                        @ (a, Queue.Queue a)
+                        (GHC.List.head @ a ww,
+                         let {
+                           x :: GHC.Prim.Int# = GHC.Prim.-# ww1 1#
+                         } in
+                         case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.<# x ww3) of wild1 {
+                           GHC.Types.False
+                           -> Queue.MkQueue
+                                @ a
+                                (Queue.$wunsafeDrop @ a 1# ww)
+                                (GHC.Types.I# x)
+                                ww2
+                                (GHC.Types.I# ww3)
+                           GHC.Types.True
+                           -> Queue.MkQueue
+                                @ a
+                                (GHC.Base.++
+                                   @ a
+                                   (Queue.$wunsafeDrop @ a 1# ww)
+                                   (GHC.List.reverse1 @ a ww2 (GHC.Types.[] @ a)))
+                                (GHC.Types.I# (GHC.Prim.+# x ww3))
+                                (GHC.Types.[] @ a)
+                                Queue.$fShowQueue1 })
+                   0# -> GHC.Base.Nothing @ (a, Queue.Queue a) }) -}
+ed83999724171a9899edefd3aa32e62c
+  $wunsafeDrop :: GHC.Prim.Int# -> [a1] -> [a1]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Inline: [0] -}
+ac77cac8e7f4a336a0b14570934ed2d7
+  data Queue a
+    = MkQueue {f :: [a],
+               flen :: GHC.Types.Int,
+               r :: [a],
+               rlen :: GHC.Types.Int}
+76ad35a2407ef463b97296adea4e3a0a
+  addQ :: a -> Queue.Queue a -> Queue.Queue a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><S(LS(S)LS(S)),1*U(U,1*U(U),U,1*U(U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: a) (w1 :: Queue.Queue a) ->
+                 case w1 of ww { Queue.MkQueue ww1 ww2 ww3 ww4 ->
+                 case ww2 of ww5 { GHC.Types.I# ww6 ->
+                 case ww4 of ww7 { GHC.Types.I# ww8 ->
+                 case GHC.Prim.+# ww6 ww8 of wild {
+                   DEFAULT
+                   -> let {
+                        y :: GHC.Prim.Int# = GHC.Prim.+# ww8 1#
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<# ww6 y) of wild1 {
+                        GHC.Types.False
+                        -> Queue.MkQueue
+                             @ a
+                             ww1
+                             (GHC.Types.I# ww6)
+                             (GHC.Types.: @ a w ww3)
+                             (GHC.Types.I# y)
+                        GHC.Types.True
+                        -> Queue.MkQueue
+                             @ a
+                             (GHC.Base.++
+                                @ a
+                                ww1
+                                (GHC.List.reverse1 @ a (GHC.Types.: @ a w ww3) (GHC.Types.[] @ a)))
+                             (GHC.Types.I# (GHC.Prim.+# ww6 y))
+                             (GHC.Types.[] @ a)
+                             Queue.$fShowQueue1 }
+                   0#
+                   -> Queue.MkQueue
+                        @ a
+                        (GHC.Types.: @ a w (GHC.Types.[] @ a))
+                        Queue.addQ1
+                        (GHC.Types.[] @ a)
+                        Queue.$fShowQueue1 } } } }) -}
+61669dcc0a7096e7a09df51f0e80bb92
+  addQ1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+8c3c1bf8ac0dbcf80fca7e3a01ca0562
+  emptyQ :: Queue.Queue a
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (\ @ a ->
+                 Queue.MkQueue
+                   @ a
+                   (GHC.Types.[] @ a)
+                   Queue.$fShowQueue1
+                   (GHC.Types.[] @ a)
+                   Queue.$fShowQueue1) -}
+215b14bca81f8b37572c87ea8802d545
+  f :: Queue.Queue a -> [a]
+  RecSel Left Queue.Queue
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Queue.Queue a) ->
+                 case ds of wild { Queue.MkQueue ds1 ds2 ds3 ds4 -> ds1 }) -}
+19f7c7493543afda39935bcf37fb2ec7
+  flen :: Queue.Queue a -> GHC.Types.Int
+  RecSel Left Queue.Queue
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLL),1*U(A,1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Queue.Queue a) ->
+                 case ds of wild { Queue.MkQueue ds1 ds2 ds3 ds4 -> ds2 }) -}
+cd1ce3980456d7fec4784905ae782833
+  fromListQ :: [a] -> Queue.Queue a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: [a]) ->
+                 case ds of wild {
+                   [] -> Queue.emptyQ @ a
+                   : ipv ipv1
+                   -> Queue.MkQueue
+                        @ a
+                        wild
+                        (case GHC.List.$wlenAcc @ a wild 0# of ww2 { DEFAULT ->
+                         GHC.Types.I# ww2 })
+                        (GHC.Types.[] @ a)
+                        Queue.$fShowQueue1 }) -}
+1819d664c082b0d29ec494dde94fa18e
+  isEmptyQ :: Queue.Queue a -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LS(S)LS(S)),1*U(A,1*U(U),A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (q :: Queue.Queue a) ->
+                 case q of wild { Queue.MkQueue ds ds1 ds2 ds3 ->
+                 case ds1 of wild1 { GHC.Types.I# x ->
+                 case ds3 of wild2 { GHC.Types.I# y ->
+                 case GHC.Prim.+# x y of wild3 {
+                   DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } } } }) -}
+b3de6b1ea4cbd5d4fbcd79c53027d425
+  r :: Queue.Queue a -> [a]
+  RecSel Left Queue.Queue
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Queue.Queue a) ->
+                 case ds of wild { Queue.MkQueue ds1 ds2 ds3 ds4 -> ds3 }) -}
+38153d08dd1b3248fbb1e35d6200b693
+  remQ :: Queue.Queue a -> GHC.Base.Maybe (a, Queue.Queue a)
+  {- Arity: 1, Strictness: <S(LS(S)LS(S)),1*U(U,1*U(U),U,1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Queue.Queue a) ->
+                 case w of ww { Queue.MkQueue ww1 ww2 ww3 ww4 ->
+                 case ww2 of ww5 { GHC.Types.I# ww6 ->
+                 case ww4 of ww7 { GHC.Types.I# ww8 ->
+                 Queue.$wremQ @ a ww1 ww6 ww3 ww8 } } }) -}
+87f124883bec7f9ab0126c1e4801d9c8
+  rlen :: Queue.Queue a -> GHC.Types.Int
+  RecSel Left Queue.Queue
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLS),1*U(A,A,A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Queue.Queue a) ->
+                 case ds of wild { Queue.MkQueue ds1 ds2 ds3 ds4 -> ds4 }) -}
+instance [safe] GHC.Show.Show [Queue.Queue] = Queue.$fShowQueue
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

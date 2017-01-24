@@ -1,0 +1,170 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-23 23:49:06.2864247 UTC
+
+interface haskell-project-0.1.0.0-40Qus2qNav6FY2bGilXhPo:Tests.DequeueTest 8001
+  interface hash: 9b5554e7ff1b11ac375fe719a7044eec
+  ABI hash: 801494bf3beed8ef5efc2da2beecc819
+  export-list hash: 510217661b4a65374b9de93dd51100ca
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 43788aa18b6564cbf87db676258abe19
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Tests.DequeueTest.prop_pushpop_front
+module dependencies: Dequeue List
+package dependencies: QuickCheck-2.8.2@QuickCheck-2.8.2-B7cXgOk7OAiKrNRsk2SfuA
+                      Win32-2.3.1.1@Win32-2.3.1.1 array-0.5.1.1@array-0.5.1.1
+                      base-4.9.0.0* containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-boot-th-8.0.1@ghc-boot-th-8.0.1
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1 pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa
+                      random-1.1@random-1.1-54KmMHXjttlERYcr1mvsAe
+                      template-haskell-2.11.0.0
+                      tf-random-0.5@tf-random-0.5-4z8OJUaXC1FRNfrLPFWAD
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.1@ghc-boot-th-8.0.1:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa:Control.Monad.Primitive
+                         template-haskell-2.11.0.0:Language.Haskell.TH.Syntax
+import  -/  QuickCheck-2.8.2@QuickCheck-2.8.2-B7cXgOk7OAiKrNRsk2SfuA:Test.QuickCheck ec112fd729f2e762f9406bd01c0d8cc4
+import  -/  base-4.9.0.0:Data.Tuple 84c2bcc75b7a239341ae2f88cce9d8d7
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  Dequeue 56032de13ff670e6b7c331d11042cf60
+  exports: 0ef5986a949cf27e577803e312e39e86
+  Dequeue 4ec5b438b8fe601865e6401afdee94d7
+  extractDEQ ae16e34a1d3b5c18de4ba473f6b469ce
+  popfrontDEQ 6b1c0d046e32cd97abdc98347628931d
+  pushfrontDEQ f4b7d4df12e7e1967ecd32f37b19bf50
+  toListDEQ 88e992611e6bb829882f4e4b24039a54
+92c83f2358ce7efa633f90f9a288231e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Tests.DequeueTest.$trModule2
+                   Tests.DequeueTest.$trModule1) -}
+d30c91a8d2fc227b3eaff24e1ae03292
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Tests.DequeueTest"#) -}
+87c2155b02cce320e9165721924d89f8
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "haskell-project-0.1.0.0-40Qus2qNav6FY2bGilXhPo"#) -}
+7574e183dec72809652459171e215cb6
+  $wprop_pushpop_front ::
+    GHC.Classes.Eq a =>
+    [a] -> GHC.Prim.Int# -> [a] -> GHC.Prim.Int# -> a -> GHC.Types.Bool
+  {- Arity: 6,
+     Strictness: <L,U(C(C1(U)),A)><L,U><S,U><L,U><S,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Classes.Eq a)
+                   (ww :: [a])
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: [a])
+                   (ww3 :: GHC.Prim.Int#)
+                   (w1 :: a) ->
+                 case Dequeue.$wdequeue
+                        @ a
+                        (GHC.Types.: @ a w1 ww)
+                        (GHC.Prim.+# ww1 1#)
+                        ww2
+                        ww3 of ww9 { (#,,,#) ww10 ww11 ww12 ww13 ->
+                 case ww11 of ww5 { GHC.Types.I# ww6 ->
+                 case ww13 of ww7 { GHC.Types.I# ww8 ->
+                 case Dequeue.$wpopfrontDEQ @ a ww10 ww6 ww12 ww8 of wild {
+                   GHC.Base.Nothing
+                   -> case GHC.Prim.+# ww1 ww3 of wild1 {
+                        DEFAULT
+                        -> GHC.Classes.$fEq[]_$c==
+                             @ a
+                             w
+                             (GHC.Base.++ @ a ww (GHC.List.reverse1 @ a ww2 (GHC.Types.[] @ a)))
+                             (GHC.Types.[] @ a)
+                        0#
+                        -> GHC.Classes.$fEq[]_$c==
+                             @ a
+                             w
+                             (GHC.Types.[] @ a)
+                             (GHC.Types.[] @ a) }
+                   GHC.Base.Just ipv
+                   -> case ipv of wild1 { (,) ds1 y ->
+                      case y of ww4 { Dequeue.MkDequeue ww15 ww16 ww17 ww18 ->
+                      case ww16 of ww19 { GHC.Types.I# ww20 ->
+                      case ww18 of ww21 { GHC.Types.I# ww22 ->
+                      let {
+                        karg :: [a]
+                        = case GHC.Prim.+# ww20 ww22 of wild2 {
+                            DEFAULT
+                            -> GHC.Base.++
+                                 @ a
+                                 ww15
+                                 (GHC.List.reverse1 @ a ww17 (GHC.Types.[] @ a))
+                            0# -> GHC.Types.[] @ a }
+                      } in
+                      case GHC.Prim.+# ww1 ww3 of wild2 {
+                        DEFAULT
+                        -> GHC.Classes.$fEq[]_$c==
+                             @ a
+                             w
+                             (GHC.Base.++ @ a ww (GHC.List.reverse1 @ a ww2 (GHC.Types.[] @ a)))
+                             karg
+                        0#
+                        -> GHC.Classes.$fEq[]_$c==
+                             @ a
+                             w
+                             (GHC.Types.[] @ a)
+                             karg } } } } } } } } }) -}
+cdabd90296f3085c8518fdb4f8aad0f2
+  prop_pushpop_front ::
+    GHC.Classes.Eq a => Dequeue.Dequeue a -> a -> GHC.Types.Bool
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(U)),A)><S(LS(S)LS(S)),1*U(U,1*U(U),U,1*U(U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Classes.Eq a)
+                   (w1 :: Dequeue.Dequeue a)
+                   (w2 :: a) ->
+                 case w1 of ww { Dequeue.MkDequeue ww1 ww2 ww3 ww4 ->
+                 case ww2 of ww5 { GHC.Types.I# ww6 ->
+                 case ww4 of ww7 { GHC.Types.I# ww8 ->
+                 Tests.DequeueTest.$wprop_pushpop_front
+                   @ a
+                   w
+                   ww1
+                   ww6
+                   ww3
+                   ww8
+                   w2 } } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
